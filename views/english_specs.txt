@@ -1,0 +1,18 @@
+*** Example Sentences ***
+1.  The cat in the hat.
+2.  The cat in the hat saw a cat.
+3.  The catcher saw a dog.
+4.  The catcher saw a cat.
+
+BEHAVIOR                                                INPUT EXAMPLE           OUTPUT EXAMPLE      DESCRIPTION
+1. It returns 0 if the word isn't in the sentence.      Sentence 1, 'dog'       0                   Easiest way to test if there are no matches.  Simplest test.
+
+2. It returns 1 if the word appears once                Sentence 1, 'cat'       1                   Testing for just a single match.  Tests program for simplest match.
+
+3. It returns 2 if the word appears twice               Sentence 2, 'cat'       2                   Testing for multiple matches.
+
+4. It returns 0 if the word appears inside another      Sentence 3, 'cat'       0                   Testing for false positives
+
+5. It returns 1 if the word appears once                Sentence 4, 'cat'       1                   Testing for false positives with matches
+
+6. It returns 1 if the word is capitalized              Sentence 4, 'CaT'       1                   Testing for capitalization with matches
