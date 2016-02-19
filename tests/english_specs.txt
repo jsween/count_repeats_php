@@ -3,6 +3,8 @@
 2.  The cat in the hat saw a cat.
 3.  The catcher saw a dog.
 4.  The catcher saw a cat.
+5.  The CAT in the hat saw a CaT riding another cAt
+
 
 BEHAVIOR                                                INPUT EXAMPLE           OUTPUT EXAMPLE      DESCRIPTION
 1. It returns 0 if the word isn't in the sentence.      Sentence 1, 'dog'       0                   Easiest way to test if there are no matches.  Simplest test.
@@ -16,3 +18,7 @@ BEHAVIOR                                                INPUT EXAMPLE           
 5. It returns 1 if the word appears once                Sentence 4, 'cat'       1                   Testing for false positives with matches
 
 6. It returns 1 if the word is capitalized              Sentence 4, 'CaT'       1                   Testing for capitalization with matches
+
+7. It returns 3 if the phrase is capitalized.           Sentence 5, 'cat'       3                   Testing for capitalization in the phrase
+
+8. It returns 3 if both phrase and word is capitalized. Sentence 5, 'cAt'       3                   Testing for capitalization in both phrase and word
