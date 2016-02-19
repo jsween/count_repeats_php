@@ -18,6 +18,7 @@
         $message_text = "The word " . $_GET['word'] . " appears " . $my_count . " times.";
         return $app['twig']->render('count.html.twig', array(
             'form' => true,
+            'navbar' => true,
             'message' => array(
                 'text' => $message_text,
                 'type' => 'info'
