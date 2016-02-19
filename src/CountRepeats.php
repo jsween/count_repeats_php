@@ -5,7 +5,7 @@
         {
             $count = 0;
             $words = explode(' ', $input_phrase);
-            // $search_word = strtolower($input_word);
+            $search_word = strtolower($input_word);
             foreach ($words as $i => $word) {
                 if($search_word == $word) {
                     $count++;
