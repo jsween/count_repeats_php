@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include '/includes/head.html.twig' %}
+  </head>
+  <body>
+    {% include '/includes/navbar.html.twig' %}
+    <div class="container">
+
+      <h1>Find and Count!</h1>
+      <p class="well well-lg">Enter a phrase and a word that you want to search for.  Click the button below and find how many times your word appears in the phrase!</p>
+      <p class="text-warning">Note: Capitalization does not matter.</p>
+      {% include '/includes/message.html.twig'%}
+      {% include '/includes/form.html.twig' %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{% if form %}
+  <form action='/count'>
+    <div class="form-group">
+      <label for='phrase'>Please enter a phrase to search through:</label>
+      <input name='phrase' id='phrase' type='text' class='form-control' required>
+    </div>
+    <div class="form-group">
+      <label for='word'>Enter a word to search for:</label>
+      <input name='word' id='word' type='text' class='form-control' required>
+    </div>
+    <button type='submit' class='btn btn-success' name='button' value='any'>Count!</button>
+  </form>
+{% endif %}

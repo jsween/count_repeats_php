@@ -7,7 +7,8 @@
 
     $app->get("/", function() use ($app) {
         return $app['twig']->render('index.html.twig', array(
-            'form' => true
+            'form' => true,
+            'navbar' => true
         ));
     });
 
@@ -15,7 +16,6 @@
         $my_CountRepeats = new CountRepeats;
         $my_count = $my_CountRepeats->count($_GET['phrase'], $_GET['word']);
         $message_text = "The word " . $_GET['word'] . " appears " . $my_count . " times.";
-
         return $app['twig']->render('count.html.twig', array(
             'form' => true,
             'message' => array(
